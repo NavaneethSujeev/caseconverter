@@ -13,29 +13,43 @@
         padding-top: 50px;
     }
     .btn{
-        border: 1px solid gray;
+        border: 1px solid rgb(255, 255, 255);
+    }
+    body{
+        /* background-color: rgb(0, 0, 0); */
+        background-image:url("https://media.istockphoto.com/photos/chaotic-black-low-poly-surface-abstract-3d-render-picture-id944880340?b=1&k=20&m=944880340&s=170667a&w=0&h=TEeHm7H-f1GBjv9c0Ai6iAx3mHqAPLX_UNtz0-tOUms=");
+        /* background-repeat:no-repeat;  */
+    }
+    h2{
+        text-align: center;
+        color: #ffffff;
+        padding-bottom: 20px;
+    }
+    .type{
+        padding-left: 9%;
     }
 </style>
 <body>
     <div class="container">
-      <div class="row">
+        <h2>CASE CONVERTION</h2>
+      <div class="row type">
           <div class="col">
-              <textarea name="word" id="word" rows="7" cols="120" placeholder="Text"></textarea>
+              <textarea name="word" id="word" rows="7" cols="110" placeholder="Text"></textarea>
           </div>
       </div> 
     <div class="row">
-        <div class="col" style="padding-left: 20%">
-         <button class="btn" onclick="convertStr()"> UPPER CASE </button>
-         <button class="btn" onclick="changetolower()"> lower case </button>
-         <button class="btn" onclick="changetocapitalise()"> CaPitalise </button>
-         <button class="btn" onclick="Sentancetoupper()"> Sentence Case </button>
-         <button class="btn" onclick="toggleletter()"> tOGGLE cASE </button>
+        <div class="col " style="padding-left: 25%; padding-top:3%;padding-bottom:3%;">
+         <button class="btn btn-primary" onclick="convertStr()"> UPPER CASE </button>
+         <button class="btn btn-primary" onclick="changetolower()"> lower case </button>
+         <button class="btn btn-primary" onclick="changetocapitalise()"> CaPitalise </button>
+         <button class="btn btn-primary" onclick="Sentancetoupper()"> Sentence Case </button>
+         <button class="btn btn-primary" onclick="toggleletter()"> tOGGLE cASE </button>
          {{-- <button class="btn" onclick="convertStr()"> aLtErNaTe cAsE </button> --}}
         </div>
     </div>
-    <div class="row">
+    <div class="row type">
         <div class="col pt-2">
-            <textarea name="result" id="result" rows="7" cols="120" placeholder="Result"></textarea> 
+            <textarea name="result" id="result" rows="7" cols="110" placeholder="Result"></textarea> 
         </div>
     </div>
      
